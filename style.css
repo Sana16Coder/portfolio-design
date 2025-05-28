@@ -1,0 +1,172 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap');
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding-top: 80px;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+/* Header Navigation */
+header {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: linear-gradient(to bottom right, #00fff2, #ff6699);
+  color: #000;
+}
+
+/* Hero Section */
+.hero_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 80vh;
+  text-align: center;
+  padding: 60px 20px 100px;
+  background: linear-gradient(to bottom right, #00fff2, #ff6699);
+  color: white;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.hero_main h1 {
+  font-size: 2.8rem;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.intro {
+  max-width: 650px;
+  font-size: 1.1rem;
+  margin: 1.5rem auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  background: white;
+  color: #ff6699;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #222;
+  color: white;
+}
+
+/* Hero Image */
+.hero-image {
+  max-width: 250px;
+  margin-top: 30px;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  padding: 10px;
+}
+
+/* Project Cards (used in portfolio.html) */
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.project-card {
+  background-color: white;
+  color: #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #ff6699;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+}
